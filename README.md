@@ -1,29 +1,34 @@
-# vue-mongo-project
+# Diary
 
-This template should help get you started developing with Vue 3 in Vite.
+Это веб приложение представляет собой ее frontend часть, для системы: добавления, удаления и изменения учеников, учителей и предметов.
+Что бы можно было работать с базой данных вам нужно перейти на этот репозиторий и собрать решение [mongo-project](https://github.com/Yaoguao/new-mongo-project)
 
-## Recommended IDE Setup
+## Запуск проекта
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Чтобы запустить проект, выполните следующий шаг:
 
-## Customize configuration
+1. Запустите скрипт:
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+    ```sh
+    ./build.sh
+    ```
 
-## Project Setup
+## Использование
 
-```sh
-npm install
-```
+После успешного запуска системы, откройте браузер и перейдите по следующему адресу:
 
-### Compile and Hot-Reload for Development
+[http://localhost:80/](http://localhost:80/)
 
-```sh
-npm run dev
-```
+Заполните поля данными. Например:
 
-### Compile and Minify for Production
+- **login**: `admin`
+- **password**: `admin`
 
-```sh
-npm run build
-```
+После входа в систему, перейдите на страницу [AdminPage](http://localhost/#/admin)
+
+Там вы сможете произвести полный набор действий для учеников, учителем и предметов.
+
+### Примеры создания ученика
+
+Попробуйте создать ученика нажав на `ADD STUDENT`. На новой странице вам доступно два поля: имя нового ученика и его email.
+После ввода и сохранения вы можете попробовать найти его, написав в поисковую страницу его имя, или же попробовать его найти, листнув ниже.
