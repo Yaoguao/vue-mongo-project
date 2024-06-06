@@ -8,9 +8,4 @@ services:
       container_name: my_vue_app_container
       ports:
         - "80:80"
-      networks:
-        - my_network
 
-networks:
-  my_network:
-    driver: bridge
